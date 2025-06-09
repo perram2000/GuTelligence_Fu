@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 状态文本 -->
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="等待连接..."
+        android:textSize="16sp" />
+
+    <!-- 刷新按钮 -->
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="刷新页面" />
+
+    <!-- 新增：保存照片按钮 -->
+    <Button
+        android:id="@+id/btnSavePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存一张照片到手机" />
+
+    <Button
+        android:id="@+id/btnSyncPhotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同步照片" />
+    <!-- 网页显示 -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
